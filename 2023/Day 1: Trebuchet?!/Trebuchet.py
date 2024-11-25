@@ -1,9 +1,12 @@
 
 def find_first_and_last_digit(line):
     digits = []
-    for i in line:
-        if i.isdigit():
-            digits.append(i)
+    for i, c in enumerate(line):
+        if c.isdigit():
+            digits.append(c)
+        for d, val in enumerate(['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']):
+            if line[i:].startswith(val):
+                digits.append(d+1)
     return int(f"{digits[0]}{digits[-1]}")
 
 

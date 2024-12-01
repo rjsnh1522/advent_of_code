@@ -22,3 +22,4 @@ def caller():
 
 if __name__ == "__main__":
     total = caller()
+    print(total)

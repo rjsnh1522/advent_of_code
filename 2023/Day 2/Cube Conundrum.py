@@ -45,8 +45,6 @@ def check_game_possibility(line):
     # return game_val
     return prod(game_hash.values())
 
-
-
 def sum_of_possible_games():
     total_of_game_ids = 0
     with open('input.txt', 'r') as file:
